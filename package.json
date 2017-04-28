@@ -1,0 +1,45 @@
+{
+  "name": "commit-message-validator",
+  "version": "0.0.1",
+  "description": "Git commit-msg hook validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "precommit": "npm run lint",
+    "commitmsg": "node ./lib/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinjutech/commit-message-validator.git"
+  },
+  "keywords": [
+    "git",
+    "commit-msg",
+    "validator"
+  ],
+  "author": "Yudu Ban <banyudu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jinjutech/commit-message-validator/issues"
+  },
+  "homepage": "https://github.com/jinjutech/commit-message-validator#readme",
+  "bin": {
+    "commit-message-validator": "./lib/cli.js"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "husky": "^0.13.3"
+  },
+  "dependencies": {
+    "find-git-root": "^0.1.0",
+    "find-root": "^1.0.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "config": {
+    "commit-message-validator": {
+      "pattern": "^\\s*refs\\s+#\\d+\\s+.+$"
+    }
+  }
+}

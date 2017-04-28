@@ -30,5 +30,16 @@
   "devDependencies": {
     "eslint": "^3.19.0",
     "husky": "^0.13.3"
+  },
+  "dependencies": {
+    "find-git-root": "^0.1.0",
+    "find-root": "^1.0.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "config": {
+    "commit-message-validator": {
+      "pattern": "^\\s*refs\\s+#\\d+\\s+.+$"
+    }
   }
 }

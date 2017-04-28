@@ -4,7 +4,10 @@
   "description": "Git commit-msg hook validator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "precommit": "npm run lint",
+    "commitmsg": "node ./lib/cli.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/jinjutech/commit-message-validator/issues"
   },
-  "homepage": "https://github.com/jinjutech/commit-message-validator#readme"
+  "homepage": "https://github.com/jinjutech/commit-message-validator#readme",
+  "bin": {
+    "commit-message-validator": "./lib/cli.js"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "husky": "^0.13.3"
+  }
 }

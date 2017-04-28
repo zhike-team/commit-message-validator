@@ -1,0 +1,24 @@
+{
+  "name": "commit-message-validator",
+  "version": "0.0.1",
+  "description": "Git commit-msg hook validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinjutech/commit-message-validator.git"
+  },
+  "keywords": [
+    "git",
+    "commit-msg",
+    "validator"
+  ],
+  "author": "Yudu Ban <banyudu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jinjutech/commit-message-validator/issues"
+  },
+  "homepage": "https://github.com/jinjutech/commit-message-validator#readme"
+}

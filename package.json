@@ -40,8 +40,8 @@
   "config": {
     "commit-message-validator": {
       "pattern": [
-        "^\\s*refs\\s+#\\d+\\s+.+$", 
-        "^v\\d+\\.\\d+\\.\\d+" 
+        "^\\s*refs\\s+#\\d+\\s+.+$",
+        "^[vV]?\\d+\\.\\d+\\.\\d+"
       ]
     }
   }

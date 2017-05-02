@@ -1,6 +1,6 @@
 {
   "name": "commit-message-validator",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Git commit-msg hook validator",
   "main": "index.js",
   "scripts": {
@@ -39,7 +39,10 @@
   },
   "config": {
     "commit-message-validator": {
-      "pattern": "^\\s*refs\\s+#\\d+\\s+.+$"
+      "pattern": [
+        "^\\s*refs\\s+#\\d+\\s+.+$", 
+        "^v\\d+\\.\\d+\\.\\d+" 
+      ]
     }
   }
 }

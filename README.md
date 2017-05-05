@@ -30,7 +30,8 @@ This module is distributed via npm which is bundled with node and should be inst
             "config": {
                 "commit-message-validator": {
                     /* your config here */
-                    "pattern": "your regex pattern here"
+                    "pattern": "your regex pattern here",
+                    "errorMessage": "your error message"
                 }
             }
         }
@@ -46,7 +47,8 @@ This module is distributed via npm which is bundled with node and should be inst
                         "pattern2",
                         /* ... */
                         "pattern N"
-                    ]
+                    ],
+                    "errorMessage": "your error message"
                 }
             }
         }

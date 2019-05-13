@@ -20,8 +20,10 @@ This module is distributed via npm which is bundled with node and should be inst
 3. Config commit-msg hook to run commit-message-validator in package.json
 
         {
-            scripts: {
-                "commitmsg": "commit-message-validator"
+            "husky": {
+                "hooks": {
+                    "commit-msg": "commit-message-validator"
+                }
             }
         }
 4. Custom commit-message regex pattern in package.json
@@ -29,28 +31,9 @@ This module is distributed via npm which is bundled with node and should be inst
         {
             "config": {
                 "commit-message-validator": {
-                    /* your config here */
+                    "_comment": "pattern can be Regex string or array of Regex string",
                     "pattern": "your regex pattern here",
                     "errorMessage": "your error message"
                 }
             }
         }
-
-    Or 
-
-        {
-            "config": {
-                "commit-message-validator": {
-                    /* your config here, pattern can be an array */
-                    "pattern": [
-                        "pattern1",
-                        "pattern2",
-                        /* ... */
-                        "pattern N"
-                    ],
-                    "errorMessage": "your error message"
-                }
-            }
-        }
-    
-    

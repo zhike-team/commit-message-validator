@@ -1,6 +1,6 @@
 {
   "name": "commit-message-validator",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Git commit-msg hook validator",
   "main": "index.js",
   "scripts": {

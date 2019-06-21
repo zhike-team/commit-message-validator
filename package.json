@@ -28,7 +28,7 @@
     "commit-message-validator": "./lib/cli.js"
   },
   "devDependencies": {
-    "eslint": "^3.19.0",
+    "eslint": "^5.16.0",
     "husky": "^0.13.3"
   },
   "dependencies": {
